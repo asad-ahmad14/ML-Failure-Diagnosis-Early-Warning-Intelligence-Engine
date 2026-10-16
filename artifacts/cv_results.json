@@ -1,0 +1,30 @@
+[
+  {
+    "model": "hist_gradient_boosting",
+    "pr_auc_oof": 0.8748836729083442,
+    "pr_auc_fold_mean": 0.8766192367849588,
+    "pr_auc_fold_std": 0.03290805035735595,
+    "roc_auc_oof": 0.9767235012238852
+  },
+  {
+    "model": "random_forest",
+    "pr_auc_oof": 0.8718846650344793,
+    "pr_auc_fold_mean": 0.8750801146698348,
+    "pr_auc_fold_std": 0.02661028151176772,
+    "roc_auc_oof": 0.9793066225396373
+  },
+  {
+    "model": "logistic_regression",
+    "pr_auc_oof": 0.48095292122837296,
+    "pr_auc_fold_mean": 0.4800922942035246,
+    "pr_auc_fold_std": 0.05996373438156817,
+    "roc_auc_oof": 0.9206625356459283
+  },
+  {
+    "model": "dummy_prior",
+    "pr_auc_oof": 0.03377536900369004,
+    "pr_auc_fold_mean": 0.033875,
+    "pr_auc_fold_std": 0.0002500000000000002,
+    "roc_auc_oof": 0.49847223210231845
+  }
+]

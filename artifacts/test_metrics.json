@@ -1,0 +1,57 @@
+{
+  "pr_auc": 0.8584459324841952,
+  "roc_auc": 0.9741238886859093,
+  "levels": {
+    "watch": {
+      "threshold": 0.1092,
+      "precision": 0.3937,
+      "recall": 0.9265,
+      "tp": 63,
+      "fp": 97,
+      "fn": 5,
+      "flagged_per_1000": 80.0,
+      "precision_ci95": [
+        0.3182,
+        0.475
+      ],
+      "recall_ci95": [
+        0.8594,
+        0.9846
+      ]
+    },
+    "elevated": {
+      "threshold": 0.3662,
+      "precision": 0.8615,
+      "recall": 0.8235,
+      "tp": 56,
+      "fp": 9,
+      "fn": 12,
+      "flagged_per_1000": 32.5,
+      "precision_ci95": [
+        0.7742,
+        0.9365
+      ],
+      "recall_ci95": [
+        0.7301,
+        0.9091
+      ]
+    },
+    "high": {
+      "threshold": 0.517,
+      "precision": 0.9286,
+      "recall": 0.7647,
+      "tp": 52,
+      "fp": 4,
+      "fn": 16,
+      "flagged_per_1000": 28.0,
+      "precision_ci95": [
+        0.8541,
+        0.9846
+      ],
+      "recall_ci95": [
+        0.6667,
+        0.8621
+      ]
+    }
+  }
+}

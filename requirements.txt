@@ -1,0 +1,12 @@
+﻿fastapi==0.143.0
+uvicorn[standard]==0.54.0
+pydantic==2.14.1
+pydantic-settings==2.15.0
+SQLAlchemy==2.1.4
+alembic==1.20.0
+pandas==3.0.6
+numpy==2.5.4
+scikit-learn==1.9.1
+joblib==1.6.0
+shap==0.53.0
+psycopg[binary]==3.3.6

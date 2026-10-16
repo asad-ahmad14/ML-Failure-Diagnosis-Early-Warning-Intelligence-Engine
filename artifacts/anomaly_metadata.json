@@ -1,0 +1,19 @@
+{
+  "model_version": "iforest_v1",
+  "trained_at": "2026-10-14T07:50:16.553286+00:00",
+  "sklearn_version": "1.9.1",
+  "seed": 42,
+  "features": [
+    "Air temperature",
+    "Process temperature",
+    "Rotational speed",
+    "Torque",
+    "Tool wear",
+    "temp_diff",
+    "power_w"
+  ],
+  "flag_percentile": 99.0,
+  "flag_threshold": 0.6202788872272774,
+  "n_train_rows": 8000,
+  "rule": "unusual if score >= p99 of dev scores; score = -score_samples"
+}

@@ -1,0 +1,54 @@
+{
+  "model_name": "random_forest",
+  "model_version": "rf_v1",
+  "trained_at": "2026-10-13T07:14:36.466946+00:00",
+  "sklearn_version": "1.9.1",
+  "seed": 42,
+  "features": [
+    "Type",
+    "Air temperature",
+    "Process temperature",
+    "Rotational speed",
+    "Torque",
+    "Tool wear",
+    "temp_diff",
+    "power_w"
+  ],
+  "n_train_rows": 8000,
+  "n_train_failures": 271,
+  "thresholds": {
+    "watch": 0.1091764486752207,
+    "elevated": 0.3661977223975002,
+    "high": 0.5170034554479722
+  },
+  "threshold_rule": "watch: highest cutoff with OOF recall >= 0.90; elevated: highest cutoff with OOF recall >= 0.80; high: lowest cutoff with OOF precision >= 0.95 (never below elevated)",
+  "oof_operating_points": {
+    "watch": {
+      "threshold": 0.1092,
+      "precision": 0.4094,
+      "recall": 0.9004,
+      "tp": 244,
+      "fp": 352,
+      "fn": 27,
+      "flagged_per_1000": 74.5
+    },
+    "elevated": {
+      "threshold": 0.3662,
+      "precision": 0.8645,
+      "recall": 0.8007,
+      "tp": 217,
+      "fp": 34,
+      "fn": 54,
+      "flagged_per_1000": 31.4
+    },
+    "high": {
+      "threshold": 0.517,
+      "precision": 0.9512,
+      "recall": 0.7196,
+      "tp": 195,
+      "fp": 10,
+      "fn": 76,
+      "flagged_per_1000": 25.6
+    }
+  }
+}

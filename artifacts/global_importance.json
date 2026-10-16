@@ -1,0 +1,14 @@
+{
+  "method": "mean |SHAP| on dev sample",
+  "n_rows": 400,
+  "importance": {
+    "power_w": 0.112992,
+    "Rotational speed": 0.102842,
+    "Tool wear": 0.098802,
+    "Torque": 0.093073,
+    "temp_diff": 0.069477,
+    "Air temperature": 0.032054,
+    "Process temperature": 0.019082,
+    "Type": 0.012627
+  }
+}

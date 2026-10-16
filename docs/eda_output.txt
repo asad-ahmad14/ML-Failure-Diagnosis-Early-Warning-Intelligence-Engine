@@ -1,0 +1,67 @@
+﻿Shape: (10000, 12)
+Columns: ['Type', 'Air temperature', 'Process temperature', 'Rotational speed', 'Torque', 'Tool wear', 'Machine failure', 'TWF', 'HDF', 'PWF', 'OSF', 'RNF']
+
+Total missing values: 0
+Fully duplicated rows: 0
+Duplicate feature rows: 0
+
+Type counts:
+ Type
+L    6000
+M    2997
+H    1003
+Name: count, dtype: int64
+
+Failure rate by Type:
+       count  sum      mean
+Type                      
+H      1003   21  0.020937
+L      6000  235  0.039167
+M      2997   83  0.027694
+
+Failure mode counts:
+ TWF     46
+HDF    115
+PWF     95
+OSF     98
+RNF     19
+dtype: int64
+
+Rows by number of active failure modes:
+ 0    9652
+1     324
+2      23
+3       1
+Name: count, dtype: int64
+
+Label consistency (rows = Machine failure, columns = any mode active):
+any mode            0    1
+Machine failure           
+0                9643   18
+1                   9  330
+
+RNF vs Machine failure:
+Machine failure     0    1
+RNF                       
+0                9643  338
+1                  18    1
+
+Value ranges:
+                             min           max
+Air temperature       295.30000    304.500000
+Process temperature   305.70000    313.800000
+Rotational speed     1168.00000   2886.000000
+Torque                  3.80000     76.600000
+Tool wear               0.00000    253.000000
+temp_diff               7.60000     12.100000
+power_w              1148.44061  10469.923005
+
+Mean of each column by Machine failure (0 = normal, 1 = failure):
+Machine failure                0            1
+Air temperature       299.973999   300.886431
+Process temperature   309.995570   310.290265
+Rotational speed     1540.260014  1496.486726
+Torque                 39.629655    50.168142
+Tool wear             106.693717   143.781711
+temp_diff              10.021571     9.403835
+power_w              6244.547534  7282.819485
